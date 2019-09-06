@@ -18,13 +18,13 @@ body{
 #homebackground{
   background-image: url('FoundationHomepage.png');
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: left top;
   height:100vh; 
   align-items:center;
 }
 #homebackground h1{
-  padding-top: 40px;
-  font-size: 80px;
+  padding-top: 60px;
+  font-size: 60px;
   font-style: normal;
   font: calibri;
   color: white;
@@ -33,7 +33,7 @@ body{
 
 #homebackground h2 {
   
-  font-size: 40px;
+  font-size: 20px;
   font-style: italic;
   font: calibri;
   color: white;
@@ -42,7 +42,7 @@ body{
 
 /* semi-transparent box over the background   */
 .transparent-layer {
-    background-color: rgba(68, 114, 196, 0.5);
+    background-color: rgba(68, 114, 196, 0.6);
     position:absolute;
     top: 30vh;
     width: 100vw;
