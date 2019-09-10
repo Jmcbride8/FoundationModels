@@ -12,16 +12,16 @@ body{
 }
 
 /*Home page background*/
-#homebackground{
+.homebackground{
   position: relative;
-  background-image: url('FoundationHomepage.png');
+  background: image_url('FoundationHomepage.png');
   background-repeat: no-repeat;
   background-position: left top;
   top: 10vh;
   height:100vh; 
   align-items:center;
 }
-#homebackground h1{
+.homebackground h1{
   position: relative;
   padding-top: 60px;
   font-size: 60px;
@@ -31,7 +31,7 @@ body{
   text-align: center;
 }
 
-#homebackground h2 {
+.homebackground h2 {
   
   font-size: 20px;
   font-style: italic;
