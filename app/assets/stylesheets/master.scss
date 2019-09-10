@@ -13,42 +13,43 @@ body{
 
 /*Home page background*/
 .homebackground{
-  position: relative;
+  position: fixed;
   background: image_url('FoundationHomepage.png');
   background-repeat: no-repeat;
   background-position: left top;
   top: 10vh;
+  padding-top: 30vh;
   height:100vh; 
   align-items:center;
 }
-.homebackground h1{
-  position: relative;
-  padding-top: 60px;
+.transparent-layer h1{
   font-size: 60px;
   font-style: normal;
-  font: calibri;
-  color: white;
-  text-align: center;
+  z-index: 2;
 }
 
-.homebackground h2 {
-  
+.transparent-layer h2 {
   font-size: 20px;
   font-style: italic;
-  font: calibri;
-  color: white;
-  text-align: center;
+  z-index: 2;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
 }
 
 /* semi-transparent box over the background   */
 .transparent-layer {
-    background-color: rgba(68, 114, 196, 0.6);
-    position:relative;
-    top: 20vh;
-    width: 100vw;
-    height: 35vh;
-    z-index: 1;
-    align-items: center;
+  background-color: rgba(68, 114, 196, 0.6);
+  position:relative;
+  width: 100vw;
+  padding: 40px;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font: calibri;
+
   }
 
   #navbar-logo {
