@@ -17,8 +17,9 @@ body{
   background: image_url('FoundationHomepage.png');
   background-repeat: no-repeat;
   background-position: left top;
-  top: 10vh;
+  padding:0px;
   padding-top: 30vh;
+
   height:100vh; 
   align-items:center;
 }
@@ -42,7 +43,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .transparent-layer {
   background-color: rgba(68, 114, 196, 0.6);
   position:relative;
-  width: 100vw;
+  width: 100%;
   padding: 40px;
   z-index: 1;
   align-items: center;
@@ -61,5 +62,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
     background-color: white !important;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     z-index:2;
+    padding-left: 10%;
+    padding-right: 10%;
 
   }
