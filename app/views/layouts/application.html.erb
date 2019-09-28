@@ -48,12 +48,14 @@
 
         </div>
       </nav>
-
+      <br/>
   <!-- ALERT IF USER LOGIN FAILS -->
       <% if notice.present? %>
-        <p class="alert alert-info"><%= notice %></p>
+        <br/>
+        <p class="alert alert-primary"><%= notice %> </p>
       <% end %>
       <% if alert.present? %>
+        <br/>
         <p class="alert alert-danger"><%= alert %></p>
       <% end %>   
 
