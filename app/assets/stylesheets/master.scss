@@ -16,6 +16,33 @@ body{
       margin-bottom: 0px;
 }
 
+  #navbar-logo {
+    width: 30px;
+    height:30px;
+    margin-right:20px;
+  }
+
+  a.nav-link:hover{
+    color: rgba(68, 114, 196,1) !important;
+  }
+
+  .navbar{
+    background-color: white !important;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index:2;
+
+  }
+
+
+li.nav-item{
+  margin-right: 10px;
+}
+
+h1, h2, h3, h4, h5, h6,p, .navbar {
+  margin: 0;  
+}
+
+
 /*Home page background*/
 .homebackground{
   position: fixed;
@@ -28,6 +55,7 @@ body{
   align-items:center;
   vertical-align: middle;
 }
+
 .transparent-layer h1{
   font-size: 60px;
   font-style: normal;
@@ -38,10 +66,6 @@ body{
   font-size: 20px;
   font-style: italic;
   z-index: 2;
-}
-
-h1, h2, h3, h4, h5, h6,p, .navbar {
-  margin: 0;
 }
 
 /* semi-transparent box over the background   */
@@ -59,19 +83,6 @@ h1, h2, h3, h4, h5, h6,p, .navbar {
 
   }
 
-  #navbar-logo {
-    width: 30px;
-    height:30px;
-  }
-
-  .navbar{
-    background-color: white !important;
-    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index:2;
-    padding-left: 10%;
-    padding-right: 10%;
-
-  }
 
 
 .booyah-box {
