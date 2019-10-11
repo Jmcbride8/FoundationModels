@@ -1,0 +1,18 @@
+// Place all the styles related to the downloads controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.downloads_pic {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 5vw;
+  height:100vh; 
+  align-items:center;
+  vertical-align: middle;
+  z-index: -1;
+}
+
+div.white-heading {
+  color: white;
+}
