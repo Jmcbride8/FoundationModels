@@ -1,6 +1,7 @@
 class DownloadsController < ApplicationController
 
-  def show
-
+  def index
+    
   end
+  
 end
