@@ -2,17 +2,97 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div.downloads_pic {
-  position: fixed;
+hr {
+    border: none;
+    height: 5px;
+    color:  rgba(68, 114, 196,1); /* old IE */
+    background-color:  rgba(68, 114, 196,1); /* Modern Browsers */
+}
+
+.downloads_pic {
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: left top;
   align-items:center;
   vertical-align: middle;
   z-index: -1;
-  background-size: 100%;
+  object-fit: cover;
+  margin:0;
 
 }
 
-#download_btn{
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+.card {
+  color: #444444;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
+
+.card-header{
+  background-color: rgba(0, 0, 0, 0.0) !important;
+  border-radius: 4px;
+}
+
+.custom-border {
+  color: #444444;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.product-outline{
+  margin: 10px; 
+  height: 400px;
+}
+
+.heading-title h3 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.half-txt {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 25px;
+    color: #7e7e7e;
+}
+
+
+.product-container {
+  border-radius: 4px;
+  height: 530px;
+  margin-bottom: 50px;
+}
+
+.product-hdr{
+  color: rgba(68, 114, 196, 1);
+}
+
+.product-button{
+  margin: 20px;
+}
+
+p.price {
+  font-size: 60px;
+  margin: auto;
+  text-align: middle;
+  vertical-align: middle !important;
+}
+
+div.product-bg {
+  background-image: linear-gradient(rgba(68, 114, 196, 0.85), rgba(68, 114, 196, 0.85)), url("products/cloud.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: white;
+}
+
+button.btn-outline-primary {
+  border-color: white ;
+  color: white;
+
+}
+
