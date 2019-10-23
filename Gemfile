@@ -76,3 +76,6 @@ gem 'simple_form'
 
 #Gem for user signin and authentication
 gem 'devise'
+
+#gem for debugging
+gem 'byebug'

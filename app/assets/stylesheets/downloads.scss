@@ -2,43 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-hr {
-    border: none;
-    height: 5px;
-    color:  rgba(68, 114, 196,1); /* old IE */
-    background-color:  rgba(68, 114, 196,1); /* Modern Browsers */
+
+.product-num {
+  color:white;
+  background-color: rgba(68, 114, 196,1);
+  padding:5px;
 }
 
-.downloads_pic {
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-position: left top;
-  align-items:center;
-  vertical-align: middle;
-  z-index: -1;
-  object-fit: cover;
-  margin:0;
+.container{
 
+  display: inline-block; 
+  margin-bottom: 5%;
 }
 
-.card {
+.pricing-card {
   color: #444444;
+  border-color: rgba(68, 114, 196,1);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  padding: 0px !important;
+  margin-left:3%;
+  margin-right:3%;
+  border-radius: 5px;
 }
 
-.card-header{
-  background-color: rgba(0, 0, 0, 0.0) !important;
-  border-radius: 4px;
+.pricing-card:hover {
+  background-color:   rgba(0,0,0,.07) !important;
+  border-color: rgba(68, 114, 196,1);
+  box-shadow: 0 3px 8px 0 rgba(68, 114, 196, .8), 0 3px 8px 0 rgba(68, 114, 196, .8);
 }
 
-.custom-border {
-  color: #444444;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+.details {
+  height: 100px;
 }
 
-.product-outline{
-  margin: 10px; 
-  height: 400px;
+.fill-header{
+  color:white;
+  background-color: rgba(68, 114, 196,1); 
+  border-radius: 5px;
 }
 
 .heading-title h3 {
@@ -47,52 +47,73 @@ hr {
     font-weight: normal;
 }
 
+h1.pricing {
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+
 .half-txt {
-    width: 60%;
+    width: 70%;
     text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding-top:10px;
+    padding-bottom: 0px;
+    display: inline-block;
+    line-height: 25px;
+    color: #7e7e7e;
+}
+.grey-text{
     margin: 0 auto;
     display: inline-block;
     line-height: 25px;
     color: #7e7e7e;
 }
 
-
-.product-container {
-  border-radius: 4px;
-  height: 530px;
-  margin-bottom: 50px;
-}
-
-.product-hdr{
-  color: rgba(68, 114, 196, 1);
-}
-
-.product-button{
-  margin: 20px;
-}
-
-p.price {
-  font-size: 60px;
-  margin: auto;
-  text-align: middle;
-  vertical-align: middle !important;
-}
-
-div.product-bg {
-  background-image: linear-gradient(rgba(68, 114, 196, 0.85), rgba(68, 114, 196, 0.85)), url("products/cloud.jpg"); 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  color: white;
-  border-radius: 10px;
-  border-width: 2px;
-  border-color: white;
-}
-
-button.btn-outline-primary {
-  border-color: white ;
-  color: white;
+.Comments-hdr {
+  position:   relative;
+  text-align:left;
 
 }
 
+.card-feedback {
+  color: #444444;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  padding:5vh;
+  margin: 0vh 5vh 5vh 5vh;
+  border-radius: 5px;
+}
+
+.card-feedback:hover {
+  color: #444444;
+  box-shadow: 0 2px 5px 0 rgba(68, 114, 196,.3), 0 2px 5px 0 rgba(68, 114, 196,.3);
+  padding:5vh;
+  margin: 0vh 5vh 5vh 5vh;
+}
+
+button#comments-button{
+  color:rgba(128, 128, 128,1);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin-left: 5vh !important;
+  margin-right: 5vh !important;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}

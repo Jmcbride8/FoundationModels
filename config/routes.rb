@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :homes, only: [:index]
   resources :about_pages, only: [:index]
   resources :models_pages, only: [:index]
-  resources :downloads, only: [:index]
+  resources :downloads
+  #resources :comments, only: [:show, :create]
 
 end

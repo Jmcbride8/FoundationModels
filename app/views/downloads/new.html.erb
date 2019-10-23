@@ -1,0 +1,12 @@
+  <br/><br/><br/>
+   
+   <div class="col-8 offset-2">
+    <h1> FEEDBACK FORM </h1>
+    <hr/>
+    <br/>
+    <%= simple_form_for @comments, url: downloads_path do |f| %>
+      <%= f.input :message %>
+      <%= f.input :improvements %>
+      <%= f.button :submit, "SUBMIT REVIEW"%>
+    <% end %>
+  </div>

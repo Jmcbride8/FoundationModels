@@ -1,76 +1,129 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
   <br/>
   <br/><br/><br/>
   <div class="heading-title text-center">
-      <h3>OUR FINANCIAL MODELING KITS</h3>
+      <h3>PRODUCTS & PRICING</h3>
       <p class="p-top-30 half-txt">
       Hit the ground running with our finance products.
       <br/> 
-      Start with our limited time free-trial, or dive deep in with our full products</p>
+      Start with our limited time free-trial, expert-led trainings, or dive deep in with our full products</p>
   </div>
 
   <!-- section for product-->
   <div class="col-10 offset-1">
-    <section>
     <!-- product header -->
-    <h3>REAL ESTATE CASH FLOW PRIMER</h3>
-    <hr/>
-    </divs> 
-    <p> the model is oriented around providing best in class advice</p> 
-    <br class="clr"/><br class="clr"/>
-    <!-- Product details section-->
-    <div class="rows">
-      <!-- product image -->
-      <div>
-        <%= image_tag("products/Realestateprimer.png", class: "float-left col-5 product-outline")%>
-      </div>
-        
-      <!-- card section-->
-      <div class="float-left col-5 offset-1">
-        <br/>
-        <!-- Card 1 -->
-        <div class="card mb-3 product-bg" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <p class="col-md-4 price">
-              $0
-            </p>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">30 Day Trial</h5>
-                <br/>
-                <p class="card-text">Test it out</p>
-                <br/>
-                <button type="button" class="btn btn-outline-primary">BUY NOW</button>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="row"> 
+      <div class="col-1 text-center product-num">     
+        <h1> 1 </h1>   
+      </div >
+      <h3 class= "col-11 float-left">REAL ESTATE CASH FLOW PRIMER</h3>
+    </div>
+    <br/><br/><br/>
+    <!-- Cards section-->
+    <div class="rows container text-center">
 
-
-        <!-- Card 2 -->
-        <div class="card mb-3 product-bg" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <p class="col-md-4 price">
-              $50
-            </p>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Purchase</h5>
-                <br/>
-                <p class="card-text">Full featured release</p>
-                <br/>
-                <button type="button" class="btn btn-outline-primary">BUY NOW</button>
-              </div>
-            </div>
-          </div>
+      <!-- Card # 1 -->
+      <div class="pricing-card text-center col-3 float-left">
+        <div class="fill-header">
+          <h3 class="card-header">Tutorial</h3>
         </div>
+        <h1 class="pricing"><span>$10</span></h1>
+        <hr class="thin"/>
+        <p class="half-txt">LEVEL | novice<p>
+        <hr class="thin"/>
+        <p class="half-txt details"> The step by step primer (recommended)</p>
+        <br/><br/>
+        <hr class="thin"/>
+        <br>
+        <button type="button" class="btn btn-outline-primary">BUY NOW</button>
+        <br/><br/>
       </div>
+      <!-- Card # 2 -->
+      <div class="pricing-card text-center col-3  float-left">
+        <div class="fill-header">
+          <h3 class="card-header">Model</h3>
+        </div>
+        <h1 class="pricing"><span>$20</span><span class="h6 text-muted ml-2">/ per month</span></h1>
+        <hr class="thin"/>
+        <p class="half-txt">LEVEL | average<p>
+        <hr class="thin"/>
+        <p class="half-txt details"> The financial model with the finite element market approach</p>
+        <br/><br/>
+        <hr class="thin"/>
+        <br>
+        <button type="button" class="btn btn-outline-primary">BUY NOW</button>
+        <br/><br/>
+      </div>
+
+      <!-- Card # 3 -->
+      <div class="pricing-card text-center col-3 float-left">
+        <div class="fill-header">
+          <h3 class="card-header">Support</h3>
+        </div>
+        <h1 class="pricing"><span>$50</span><span class="h6 text-muted ml-2">/ per month</span></h1>
+        <hr class="thin"/>
+        <p class="half-txt">LEVEL | investor <p>
+        <hr class="thin"/>
+        <p class="half-txt details"> Ongoing tool support & unlocked feature sets for investors</p>
+        <br/><br/>
+        <hr class="thin"/>
+        <br>
+        <button type="button" class="btn btn-outline-primary">BUY NOW</button>
+        <br/><br/>
+      </div>
+
       <!-- end of card section -->  
     </div>
-    <!-- end of product detail sections -->  
-    <br/><br/>
-    </section>
+    <br/>
+  </div>
+
+  <!-- Comments section-->
+  <div class="col-10 offset-1"> 
+    <div class="row">
+      <h4 class="Comments-hdr col-sm-8 col-md-10"> COMMUNITY FEEDBACK</h4>
+      <%= link_to "ADD YOUR FEEDBACK", new_download_path, class: "col-sm-4 col-md-2", id: "comments-button"%>
+    </div>  
+    <br/>
+
+    <div class="card-feedback">
+      <i> On the whole... </i>
+      <br/><br/>
+        <% if @comments.present? %>
+        <div class="col-12">
+          <% @comments.each do |comment| %>
+            <blockquote>
+              <%= comment.message %>
+            </blockquote>
+          <% end %>
+        </div>
+      <% elsif @comments.present? == false %>
+        <p> No community feedback yet. Be the first! </p>
+      <% end %>
+    </div>
+
+    <div class="card-feedback">
+      <i> I would love it if... </i>
+      <br/><br/>
+      <% if @comments.present? %>
+        <div class="col-12">
+          <% @comments.each do |comment| %>
+            <blockquote>
+              <%= comment.improvements %>
+            </blockquote>
+          <% end %>
+        </div>
+      <% elsif @comments.present? == false %>
+        <p> No community feedback yet. Be the first! </p>
+      <% end %>
+    </div>
+  <br/>
+  <hr/>
+
+  </div>
 
  
 
-<br/><br/><br/>
