@@ -19,10 +19,10 @@
     </div>
     <br/><br/><br/>
     <!-- Cards section-->
-    <div class="rows container text-center">
+    <div class="rows container-fluid text-center col-12">
 
       <!-- Card # 1 -->
-      <div class="pricing-card text-center col-sm-5 col-lg-3 float-left">
+      <div class="pricing-card text-center col-xsm-6  col-lg-3 col-xlg-4 float-left">
         <div class="fill-header">
           <h3 class="card-header">Tutorial</h3>
         </div>
@@ -38,7 +38,7 @@
         <br/><br/>
       </div>
       <!-- Card # 2 -->
-      <div class="pricing-card text-center col-sm-5 col-lg-3 float-left">
+      <div class="pricing-card text-center col-xsm-6  col-lg-3 col-xlg-4  float-left">
         <div class="fill-header">
           <h3 class="card-header">Model</h3>
         </div>
@@ -55,7 +55,7 @@
       </div>
 
       <!-- Card # 3 -->
-      <div class="pricing-card text-center col-sm-5 col-lg-3 float-left">
+      <div class="pricing-card text-center col-xsm-6 col-lg-3 col-xlg-4  float-left">
         <div class="fill-header">
           <h3 class="card-header">Support</h3>
         </div>
@@ -83,40 +83,42 @@
       <%= link_to "ADD YOUR FEEDBACK", new_download_path, class: "col-sm-4 col-md-2", id: "comments-button"%>
     </div>  
     <br/>
-
-    <div class="card-feedback">
-      <i> On the whole... </i>
-      <br/><br/>
-        <% if @comments.present? %>
-        <div class="col-12">
-          <% @comments.each do |comment| %>
-            <blockquote>
-              <%= comment.message %>
-            </blockquote>
+      <div class="rows">
+        <div class="card-feedback col-sm-12 col-md-5 float-left">
+          <i> On the whole... </i>
+          <br/><br/>
+            <% if @comments.present? %>
+            <div class="col-12">
+              <% @comments.each do |comment| %>
+                <blockquote>
+                  <%= comment.message %>
+                </blockquote>
+              <% end %>
+            </div>
+          <% elsif @comments.present? == false %>   
+            <p> No community feedback yet. Be the first! </p>
           <% end %>
         </div>
-      <% elsif @comments.present? == false %>
-        <p> No community feedback yet. Be the first! </p>
-      <% end %>
-    </div>
 
-    <div class="card-feedback">
-      <i> I would love it if... </i>
-      <br/><br/>
-      <% if @comments.present? %>
-        <div class="col-12">
-          <% @comments.each do |comment| %>
-            <blockquote>
-              <%= comment.improvements %>
-            </blockquote>
+        <div class="card-feedback col-sm-12 col-md-5 float-left">
+          <i> I would love it if... </i>
+          <br/><br/>
+          <% if @comments.present? %>
+            <div class="col-12">
+              <% @comments.each do |comment| %>
+                <blockquote>
+                  <%= comment.improvements %>
+                </blockquote>
+              <% end %>
+            </div>
+          <% elsif @comments.present? == false %>
+            <p> No community feedback yet. Be the first! </p>
           <% end %>
         </div>
-      <% elsif @comments.present? == false %>
-        <p> No community feedback yet. Be the first! </p>
-      <% end %>
+    <!-- END OF THE COMMENTS SECTION -->
+      </div>
     </div>
   <br/>
-  <hr/>
 
   </div>
 
